@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster+Two&family=Roboto&family=Rubik:ital@1&display=swap');
+ 
+ /* Carousel styling */
+html {
+  scroll-behavior: smooth; 
+}
+
+.stars {
+  display: inline-block;
+  font-size: 20px;
+  color: #198754; /* Gold color for stars */
+}
+
+/* START OF DIFFERENT VARIATION OF MATCHA */
+.img-equal {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+/* START OF DIFFERENT VARIATION OF MATCHA */
+
+
+/* START OF STYLING UTILITIES */
+.star {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  position: relative;
+}
+
+.card-title{
+  text-transform: capitalize;
+}
+
+.star::before {
+  content: "\2605"; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* END OF STYLING UTILITIES */
+
+
+/* START OF MATCHAS PRODUCT */
+.card.hover {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.card.hover:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.img-ice{
+  object-fit: cover;
+  width: 100%;
+  height: 313px;
+}
+
+/* END OF MATCHAS PRODUCT */
+
+
+
+
+
+.matcha-description {
+  text-align: center;
+  max-width: 650px;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  color: #fff;
+}
+
+/* START OF CAROUSEL HEADER  */
+.carousel-item .text-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  
+}
+
+.nav-link{
+  color: #fff;
+  font-weight: 600;
+}
+.navbar-title{
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 1px 1px 3px #000;
+}
+.carousel-item .text-white h1 {
+  font-size: 5.5rem; 
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+.carousel-item .text-white h5 {
+font-size: 1.2rem; 
+margin-top: 20px;
+}
+
+.carousel-item .text-white h2{
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.carousel-item .text-white .btn {
+  font-size: 1.25rem; 
+  border-radius: 25px;
+}
+
+.carousel-item .text-white a {
+  font-size: 1.25rem; 
+  text-decoration: none;
+}
+.carousel-item h1{
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 100vh;
+
+  }
+
+  .carousel-item{
+    position: relative;
+  }
+  .carousel-item:nth-child(1) {
+    background-image: url('Images/pexels-rdne-stock-project-8963453.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 35%;
+  }
+  .carousel-item:nth-child(2) {
+    background-image: url('Images/pexels-cup-of-couple-8474136.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 45%;
+    background-color: hsla(0, 0, 0, 0.9);
+  }
+  .carousel-item:nth-child(3) {
+    background: linear-gradient(135deg, #B5D99C, #B5D99C 50%, #8B956D 50%, #8B956D);
+    background-color: hsla(0, 0%, 0%, 0.9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 45%;
+   
+}
+
+/* END OF CAROUSEL HEADER */
+
+
+  /* Media Queries */
+  @media (min-width: 1199px) {
+    #introCarousel {
+      margin-top: -58.59px;
+    }
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+      height: 50vh;
+    }
+  }
+  .mask {
+    background-color: hsla(0, 0%, 0%, 0.9);
+  }
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+
+  .btn a{
+    color: #fff;
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 18px; 
+    }
+    h1{
+        font-size: 25px;
+    }
+  }
